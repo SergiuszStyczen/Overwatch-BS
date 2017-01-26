@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <style media="screen">
+
+  *{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+  }
+
+  header {
+    background: url('ov.jpg') center center no-repeat;
+    background-size: cover;
+    height: 1000px;
+  }
+
+  .carousel-caption h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 1%;
+    font-size: 72px;
+  }
+
+  .carousel-caption h1:hover {
+    cursor: pointer;
+  }
+
+  .carousel-caption p {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 0px 50px 100px 50px;;
+    font-size: 20px;
+  }
+
+  .carousel-caption p:hover {
+    cursor: pointer;
+  }
+
+  p {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 15px 50px;
+    font-size: 20px;
+  }
+
+  .nav li a {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: 1s;
+    padding: 20px 70px;
+  }
+
+  .nav li a:hover {
+    background: orange;
+  }
+
+  .nav li a:visited {
+    background: orange;
+  }
+
+  .car1 {
+    background: black;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .modal-header{
+    color:black;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .modal-body p{
+    color:black;
+    text-align: center;
+  }
+
+  .img-responsive {
+      margin: 0 auto;
+  }
+
+  .about {
+    padding: 110px 50px 90px 50px;
+    letter-spacing: 20px;
+
+  }
+
+  .group_photo {
+    margin-top: 60px;
+  }
+
+  </style>
+</head>
+<body id="body">
+
+
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <a class="navbar-brand">OVERWATCH FANBASE</a>
+    <button type="button" name="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse_1">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse" id="collapse_1">
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="#body">Home</a></li>
+      <li><a href="#car1">Heroes</a></li>
+      <li><a href="#about">About Us</a></li>
+    </ul>
+  </div>
+</div>
+
+<header>
+  <div class="container">
+
+  </div>
+</header>
+
+
+
+
+<!--Carousel-->
+
+
+
+<div class="container-fluid car1">
+  <div class="carousel slide" id="car1">
+    <ol class="carousel-indicators">
+      <li data-target="#car1" data-slide-to="0" class="active"></li>
+      <li data-target="#car1" data-slide-to="1"></li>
+      <li data-target="#car1" data-slide-to="2"></li>
+      <li data-target="#car1" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal1">Hanzo</h1>
+          <p data-toggle="modal" data-target="#modal1">The Killer Bow</p>
+          </div>
+          <img src="img/hanzo.png" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal2">Genji</h1>
+          <p data-toggle="modal" data-target="#modal2">The Immortal Brother</p>
+        </div>
+          <img src="img/genji.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal3">Reinhardt</h1>
+          <p data-toggle="modal" data-target="#modal3">Mighty Hammer</p>
+          </div>
+          <img src="img/rein.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal4">Tracer</h1>
+          <p data-toggle="modal" data-target="#modal4">THe Time Skipper</p>
+        </div>
+          <img src="img/tracer.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+            <h1 data-toggle="modal" data-target="#modal5">Widowmaker</h1>
+            <p data-toggle="modal" data-target="#modal5">Venomous Assassin</p>
+        </div>
+          <img src="img/widow.png" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal6">McCree</h1>
+          <p data-toggle="modal" data-target="#modal6">Spirit of The West</p>
+        </div>
+          <img src="img/mc.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal7">Pharah</h1>
+          <p data-toggle="modal" data-target="#modal7">Justice from Above</p>
+        </div>
+          <img src="img/phara.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal8">Reaper</h1>
+          <p data-toggle="modal" data-target="#modal8">The Death</p>
+        </div>
+          <img src="img/reaper.png" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal9">Soldier 76</h1>
+          <p data-toggle="modal" data-target="#modal9">The Justicator</p>
+        </div>
+          <img src="img/soldier.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal10">Sombra</h1>
+          <p data-toggle="modal" data-target="#modal10">The Hacker</p>
+        </div>
+          <img src="img/sombra.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal11">Bastion</h1>
+          <p data-toggle="modal" data-target="#modal11">The Last One</p>
+        </div>
+          <img src="img/bastion.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal12">Mei</h1>
+          <p data-toggle="modal" data-target="#modal12">Lovely Blizzard</p>
+        </div>
+          <img src="img/mei.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal13">Torbjorn</h1>
+          <p data-toggle="modal" data-target="#modal13">Dwarven Fury</p>
+        </div>
+          <img src="img/tor.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal14">Junkrat</h1>
+          <p data-toggle="modal" data-target="#modal14">The Maniac</p>
+        </div>
+          <img src="img/junk.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal15">D.Va</h1>
+          <p data-toggle="modal" data-target="#modal15">Prodigy Gamer</p>
+        </div>
+          <img src="img/dva.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal16">Roadhog</h1>
+          <p data-toggle="modal" data-target="#modal16">Walking Apocalypse</p>
+        </div>
+          <img src="img/hog.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal17">Winston</h1>
+          <p data-toggle="modal" data-target="#modal17">Genius for The Moon</p>
+        </div>
+          <img src="img/winston.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal18">Zarya</h1>
+          <p data-toggle="modal" data-target="#modal18">Cannon Woman</p>
+        </div>
+          <img src="img/zarya.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal19">Ana</h1>
+          <p data-toggle="modal" data-target="#modal19">The Legendary Healer</p>
+        </div>
+          <img src="img/ana.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal20">Lucio</h1>
+          <p data-toggle="modal" data-target="#modal20">DJ of The Masses</p>
+        </div>
+          <img src="img/lucio.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal21">Symmetra</h1>
+          <p data-toggle="modal" data-target="#modal21">Blue Huntress</p>
+        </div>
+          <img src="img/symm.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal22">Mercy</h1>
+          <p data-toggle="modal" data-target="#modal22">The Angel</p>
+        </div>
+          <img src="img/mercy.jpg" alt="">
+        </div>
+
+        <div class="item">
+          <div class="carousel-caption">
+          <h1 data-toggle="modal" data-target="#modal23">Zenyatta</h1>
+          <p data-toggle="modal" data-target="#modal23">Master of Tranquality</p>
+        </div>
+          <img src="img/zen.jpg" alt="">
+        </div>
+    </div>
+
+    <a href="#car1" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    <a href="#car1" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a>
+
+  </div>
+
+
+
+
+<!--Modals-->
+
+
+
+
+
+  <div class="modal fade" id="modal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          Hanzo
+        </div>
+        <div class="modal-body">
+          <img src="img/hanzo_mini.png" alt="" class="img-responsive">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="modal fade" id="modal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            Genji
+          </div>
+          <div class="modal-body">
+            <img src="img/genji_mini.png" alt=""  class="img-responsive">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      <div class="modal fade" id="modal3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              Reinhardt
+            </div>
+            <div class="modal-body">
+              <img src="img/rein_mini.png" alt="" class="img-responsive">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="modal fade" id="modal4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                Tracer
+              </div>
+              <div class="modal-body">
+                <img src="img/tracer_mini.png" alt="" class="img-responsive">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+          <div class="modal fade" id="modal5">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  Widowmaker
+                </div>
+                <div class="modal-body">
+                  <img src="img/widow_mini.png" alt="" class="img-responsive">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="modal fade" id="modal6">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    McCree
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/mc_mini.png" alt="" class="img-responsive">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+              <div class="modal fade" id="modal7">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      Pharah
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/pharah_mini.png" alt="" class="img-responsive">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+                <div class="modal fade" id="modal8">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        Reaper
+                      </div>
+                      <div class="modal-body">
+                        <img src="img/reaper_mini.png" alt="" class="img-responsive">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                  <div class="modal fade" id="modal9">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          Soldier 76
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/soldier_mini.png" alt="" class="img-responsive">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                    <div class="modal fade" id="modal10">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            Sombra
+                          </div>
+                          <div class="modal-body">
+                            <img src="img/sombra_mini.png" alt="" class="img-responsive">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                      <div class="modal fade" id="modal11">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              Bastion
+                            </div>
+                            <div class="modal-body">
+                              <img src="img/bastion_mini.png" alt="" class="img-responsive">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                        <div class="modal fade" id="modal12">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                Mei
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/mei_mini.png" alt="" class="img-responsive">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                          <div class="modal fade" id="modal13">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  Torbjorn
+                                </div>
+                                <div class="modal-body">
+                                  <img src="img/tor_mini.png" alt="" class="img-responsive">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                            <div class="modal fade" id="modal14">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    Junkrat
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="img/junk_mini.png" alt="" class="img-responsive">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+
+                              <div class="modal fade" id="modal15">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      D.VA
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="img/dva_mini.png" alt="" class="img-responsive">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+                                <div class="modal fade" id="modal16">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        Roadhog
+                                      </div>
+                                      <div class="modal-body">
+                                        <img src="img/hog_mini.png" alt="" class="img-responsive">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+                                  <div class="modal fade" id="modal17">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          Winston
+                                        </div>
+                                        <div class="modal-body">
+                                          <img src="img/winston_mini.png" alt="" class="img-responsive">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+                                    <div class="modal fade" id="modal18">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            Zarya
+                                          </div>
+                                          <div class="modal-body">
+                                            <img src="img/zarya_mini.png" alt="" class="img-responsive">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+
+                                      <div class="modal fade" id="modal19">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              Ana
+                                            </div>
+                                            <div class="modal-body">
+                                              <img src="img/ana_mini.png" alt="" class="img-responsive">
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+
+                                        <div class="modal fade" id="modal20">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                Lucio
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="img/lucio_mini.png" alt="" class="img-responsive">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+
+                                          <div class="modal fade" id="modal21">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  Symmetra
+                                                </div>
+                                                <div class="modal-body">
+                                                  <img src="img/symm_mini.png" alt="" class="img-responsive">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+
+                                            <div class="modal fade" id="modal22">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    Mercy
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <img src="img/mercy_mini.png" alt="" class="img-responsive">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+
+
+                                              <div class="modal fade" id="modal23">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      Zenyatta
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      <img src="img/zen_mini.png" alt="" class="img-responsive">
+                                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <a href="#" class="close" data-dismiss="modal"><span>&times;</span></a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+
+<!--About us-->
+
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center" id="about">
+          <h1 class="about">About us</h1>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/ov1.jpg" alt="" class="img-responsive group_photo">
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
